@@ -1,4 +1,5 @@
-const eyes = document.querySelectorAll('.eye');
+document.addEventListener('DOMContentLoaded', function() {
+    const eyes = document.querySelectorAll('.eye');
 
         document.addEventListener('mousemove', (event) => {
             const mouseX = event.clientX;
@@ -18,3 +19,5 @@ const eyes = document.querySelectorAll('.eye');
                 eye.style.transform = `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
             });
         });
+});
+
